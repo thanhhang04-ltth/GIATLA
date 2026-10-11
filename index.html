@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeasonCare - Dịch Vụ Bảo Quản Quần Áo Theo Mùa</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="[suspicious link removed]"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link href="[suspicious link removed]" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md shadow-brand-500/20">
+                    <i class="fa-solid fa-shirt"></i>
+                </div>
+                <span class="text-2xl font-extrabold text-slate-900 tracking-tight">Season<span class="text-brand-600">Care</span></span>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                <a href="#about" class="hover:text-brand-600 transition-colors">Giới thiệu</a>
+                <a href="#process" class="hover:text-brand-600 transition-colors">Quy trình</a>
+                <a href="#pricing" class="hover:text-brand-600 transition-colors">Bảng giá</a>
+                <a href="#booking" class="hover:text-brand-600 transition-colors">Đặt lịch</a>
+            </nav>
+
+            <div>
+                <a href="#booking" class="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2.5 rounded-full font-semibold shadow-md shadow-brand-600/30 transition-all transform hover:-translate-y-0.5">
+                    Đặt Thu Gom Tận Nhà
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 md:pt-24 md:pb-32 bg-gradient-to-b from-brand-50/60 to-slate-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center md:text-left">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-brand-100 text-brand-700 border border-brand-200">
+                        <i class="fa-solid fa-sparkles"></i> Giải pháp tối ưu không gian sống
+                    </span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-tight">
+                        Tủ Quần Áo Rộng Hơn, <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-teal-500">Sống Thoải Mái Hơn</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-xl">
+                        SeasonCare thu gom, giặt bảo quản chuyên sâu và cất giữ quần áo trái mùa trong kho kiểm soát độ ẩm tiêu chuẩn. Giải phóng đến 40% diện tích phòng trọ & căn hộ của bạn.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
+                        <a href="#booking" class="bg-brand-600 hover:bg-brand-700 text-white px-8 py-3.5 rounded-xl font-bold shadow-lg shadow-brand-600/25 transition-all text-center">
+                            Đặt Lịch Ngay Hôm Nay
+                        </a>
+                        <a href="#process" class="bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 px-6 py-3.5 rounded-xl font-semibold transition-all text-center">
+                            Xem Quy Trình Vận Hành
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 relative z-10">
+                        <div class="aspect-video bg-slate-100 rounded-2xl flex flex-col items-center justify-center border border-dashed border-slate-300 text-slate-400 p-8 text-center">
+                            <i class="fa-solid fa-warehouse text-5xl text-brand-500 mb-3"></i>
+                            <p class="font-medium text-slate-600">Kho bảo quản chuyên dụng SeasonCare</p>
+                            <p class="text-xs text-slate-400 mt-1">Nhiệt độ 20°C | Độ ẩm 45% | Mã định danh QR/Barcode</p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 mt-6 text-center">
+                            <div class="p-3 rounded-xl bg-slate-50">
+                                <p class="text-xl font-bold text-brand-600">100%</p>
+                                <p class="text-xs text-slate-500">Khử ẩm & nấm mốc</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-50">
+                                <p class="text-xl font-bold text-brand-600">24/7</p>
+                                <p class="text-xs text-slate-500">Camera an ninh</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-50">
+                                <p class="text-xl font-bold text-brand-600">O2O</p>
+                                <p class="text-xs text-slate-500">Giao nhận tận nhà</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Vì Sao Bạn Nên Chọn SeasonCare?</h2>
+                <p class="mt-4 text-slate-600">Chúng tôi giải quyết triệt để nỗi lo về không gian sống chật hẹp và việc bảo quản trang phục cao cấp.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Thu Gom & Giao Trả Tận Nhà</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Không cần mang vác nặng nề. Nhân viên SeasonCare đến tận phòng thu gom trang phục trái mùa và giao trả đúng hẹn khi thời tiết thay đổi.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Kho Chuyên Dụng Tiêu Chuẩn</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Quần áo được lưu trữ trong môi trường kiểm soát nhiệt độ, độ ẩm khắt khe, tránh mốc, bụi bẩn và côn trùng gây hại cho chất liệu cao cấp.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-qrcode"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Quản Lý Minh Bạch Theo Mã QR</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Mỗi kiện hàng đều được kiểm định trạng thái ban đầu, dán mã QR/Barcode và theo dõi tình trạng lưu kho trực tuyến qua ứng dụng.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step-by-Step Process -->
+    <section id="process" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Quy Trình Dịch Vụ 4 Bước</h2>
+                <p class="mt-4 text-slate-600">Đơn giản, tiện lợi và tiết kiệm thời gian tuyệt đối cho khách hàng.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center relative">
+                    <div class="w-10 h-10 bg-brand-600 text-white rounded-full font-bold flex items-center justify-center mx-auto mb-4">1</div>
+                    <h4 class="font-bold text-lg mb-2">Đặt Lịch Trực Tuyến</h4>
+                    <p class="text-slate-600 text-xs">Chọn số lượng trang phục, chọn gói dịch vụ và thời gian thu gom mong muốn.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center relative">
+                    <div class="w-10 h-10 bg-brand-600 text-white rounded-full font-bold flex items-center justify-center mx-auto mb-4">2</div>
+                    <h4 class="font-bold text-lg mb-2">Thu Gom & Niêm Phong</h4>
+                    <p class="text-slate-600 text-xs">Nhân viên đến nhận đồ, kiểm tra tình trạng, gắn mã QR định danh kẹp túi chuyên dụng.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center relative">
+                    <div class="w-10 h-10 bg-brand-600 text-white rounded-full font-bold flex items-center justify-center mx-auto mb-4">3</div>
+                    <h4 class="font-bold text-lg mb-2">Giặt & Bảo Quản Kho</h4>
+                    <p class="text-slate-600 text-xs">Xử lý giặt chuyên sâu (theo gói chọn) và bảo quản trong hệ thống kho điều hòa.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 text-center relative">
+                    <div class="w-10 h-10 bg-brand-600 text-white rounded-full font-bold flex items-center justify-center mx-auto mb-4">4</div>
+                    <h4 class="font-bold text-lg mb-2">Giao Trả Tận Nơi</h4>
+                    <p class="text-slate-600 text-xs">Khi giao mùa, yêu cầu giao trả qua web/app. Quần áo được trả lại thơm tho, sẵn sàng mặc ngay.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Gói Dịch Vụ Linh Hoạt</h2>
+                <p class="mt-4 text-slate-600">Lựa chọn giải pháp phù hợp với nhu cầu và ngân sách của bạn.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 items-stretch">
+                <!-- Basic Plan -->
+                <div class="border border-slate-200 rounded-3xl p-8 flex flex-col justify-between hover:border-brand-300 transition-all">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Gói Basic</h3>
+                        <p class="text-slate-500 text-xs mt-1">Cho khách hàng tự giặt sạch trước</p>
+                        <div class="mt-6 mb-6">
+                            <span class="text-4xl font-black text-slate-900">199.000₫</span>
+                            <span class="text-slate-500 text-sm">/ 3 tháng</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Lưu kho tối đa 10 món quần áo</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Bảo quản kho chuẩn nhiệt độ/độ ẩm</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Mã QR theo dõi trực tuyến</li>
+                            <li class="flex items-center gap-2 text-slate-400"><i class="fa-solid fa-xmark"></i> Không bao gồm phí giặt hấp</li>
+                        </ul>
+                    </div>
+                    <a href="#booking" class="block text-center bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-3 rounded-xl transition-colors">Đăng Ký Gói Basic</a>
+                </div>
+
+                <!-- Standard Plan (Featured) -->
+                <div class="border-2 border-brand-600 rounded-3xl p-8 flex flex-col justify-between relative bg-brand-50/20 shadow-xl scale-105">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-600 text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">Phổ Biến Nhất</span>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Gói Standard</h3>
+                        <p class="text-slate-500 text-xs mt-1">Thu gom + Bảo quản trọn gói</p>
+                        <div class="mt-6 mb-6">
+                            <span class="text-4xl font-black text-brand-600">349.000₫</span>
+                            <span class="text-slate-500 text-sm">/ 6 tháng</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Lưu kho tối đa 15 món quần áo</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Miễn phí 1 lần thu gom & giao trả tận nhà</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Bảo quản kho điều hòa 24/7</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Kiểm tra & khử khuẩn tia UV trước lưu kho</li>
+                        </ul>
+                    </div>
+                    <a href="#booking" class="block text-center bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-brand-600/30 transition-colors">Đăng Ký Gói Standard</a>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="border border-slate-200 rounded-3xl p-8 flex flex-col justify-between hover:border-brand-300 transition-all">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Gói Premium</h3>
+                        <p class="text-slate-500 text-xs mt-1">Thu gom + Giặt hấp chuyên sâu + Bảo quản</p>
+                        <div class="mt-6 mb-6">
+                            <span class="text-4xl font-black text-slate-900">599.000₫</span>
+                            <span class="text-slate-500 text-sm">/ 6 tháng</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Lưu kho tối đa 20 món (Gồm áo khoác dày)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Dịch vụ giặt khô/giặt hấp cao cấp trọn gói</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Thu gom & Giao trả tận phòng ưu tiên</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Bảo hiểm tài sản trang phục lên đến 10 triệu</li>
+                        </ul>
+                    </div>
+                    <a href="#booking" class="block text-center bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold py-3 rounded-xl transition-colors">Đăng Ký Gói Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold sm:text-4xl">Đặt Lịch Thu Gom Thử Nghiệm</h2>
+                <p class="text-slate-400 mt-2">Điền thông tin để nhận tư vấn và ưu đãi giảm 20% cho đơn hàng đầu tiên.</p>
+            </div>
+
+            <form class="bg-slate-800 p-8 rounded-3xl border border-slate-700 space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Họ & Tên</label>
+                        <input type="text" placeholder="Nguyễn Văn A" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Số Điện Thoại</label>
+                        <input type="tel" placeholder="0901 234 567" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Gói Dịch Vụ Quan Tâm</label>
+                        <select class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500">
+                            <option>Gói Standard (Phổ biến)</option>
+                            <option>Gói Basic</option>
+                            <option>Gói Premium</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Ngày Thu Gom Mong Muốn</label>
+                        <input type="date" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Địa Chỉ Thu Gom (Khu vực / Căn hộ)</label>
+                    <textarea rows="3" placeholder="Số nhà, Tên tòa nhà/Căn hộ, Quận/Huyện..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500"></textarea>
+                </div>
+
+                <button type="button" class="w-full bg-brand-600 hover:bg-brand-500 text-white font-bold py-4 rounded-xl shadow-lg transition-colors text-lg">
+                    Xác Nhận Đặt Lịch
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <span class="text-xl font-bold text-white">Season<span class="text-brand-500">Care</span></span>
+                <p class="text-xs text-slate-500 mt-1">Dự án Khởi nghiệp Bảo quản Quần áo Theo mùa O2O</p>
+            </div>
+            <p class="text-xs text-slate-500">&copy; 2026 SeasonCare. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
